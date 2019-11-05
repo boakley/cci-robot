@@ -1,0 +1,41 @@
+minimum_cumulusci_version: '3.1.0'
+project:
+    name: cci-robot
+    package:
+        name:  cci-robot
+        api_version: '46.0'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/cci-robot/tests
+            options:
+                outputdir: robot/cci-robot/results
+                noncritical: non-critical
+                tagstatlink: w-*:https://foundation.my.salesforce.com/search/SearchResults?asPhrase=1&searchType=1&sen=a2x&str=%1&search=Search:work item
+
+flows:
+    robot_stable:
+        description: run all robot tests, excluding unstable tests
+        steps:
+            1:
+                task: robot
+                options:
+                    exclude: unstable
+
+    robot_unstable:
+        description: run only tests tagged as unstable
+        steps:
+            1:
+                task: robot
+                options:
+                    include: unstable
+
+    robot_foundation:
+      description: run all the foundation acceptance tests
+      steps:
+        1:
+          task: robot
+          options:
+              include: foundation
