@@ -11,7 +11,7 @@ tasks:
         options:
             suites: robot/cci-robot/tests
             options:
-                outputdir: robot/cci-robot/results
+                outputdir: .
                 logtitle: this is the log title
                 tagdoc:
                   - foundation:this is a foundation test
