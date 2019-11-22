@@ -12,7 +12,12 @@ tasks:
             suites: robot/cci-robot/tests
             options:
                 outputdir: robot/cci-robot/results
-                noncritical: non-critical
+                logtitle: this is the log title
+                tagdoc:
+                  - foundation:this is a foundation test
+                noncritical:
+                  - non-critical
+                  - saul-good
                 tagstatlink: w-*:https://foundation.my.salesforce.com/search/SearchResults?asPhrase=1&searchType=1&sen=a2x&str=%1&search=Search:work item
 
 flows:
