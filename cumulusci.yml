@@ -10,15 +10,6 @@ tasks:
     robot:
         options:
             suites: robot/cci-robot/tests
-            options:
-                outputdir: .
-                logtitle: this is the log title
-                tagdoc:
-                  - foundation:this is a foundation test
-                noncritical:
-                  - non-critical
-                  - saul-good
-                tagstatlink: w-*:https://foundation.my.salesforce.com/search/SearchResults?asPhrase=1&searchType=1&sen=a2x&str=%1&search=Search:work item
 
 flows:
     robot_stable:
@@ -28,6 +19,15 @@ flows:
                 task: robot
                 options:
                     exclude: unstable
+                    options:
+                        outputdir: .
+                        logtitle: logtitle from task robot
+                        tagdoc:
+                          - foundation:this is a foundation test
+                        noncritical:
+                          - non-critical
+                          - saul-good
+                        tagstatlink: w-*:https://foundation.my.salesforce.com/search/SearchResults?asPhrase=1&searchType=1&sen=a2x&str=%1&search=Search:work item
 
     robot_unstable:
         description: run only tests tagged as unstable
