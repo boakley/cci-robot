@@ -8,7 +8,7 @@ Suite Teardown  Close all browsers
 
 *** Test Cases ***
 Example 1
-    [Tags]  w-999001
+    [Tags]  w-035657
     pass execution  looks good to me.
 
 Example 2
