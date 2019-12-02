@@ -12,5 +12,5 @@ Example 1
     pass execution  looks good to me.
 
 Example 2
-    [Tags]  non-critical  w-999002
+    [Tags]  non-critical  w-035657
     fail  not implemented yet
