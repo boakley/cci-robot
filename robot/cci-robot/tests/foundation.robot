@@ -13,4 +13,5 @@ Example 1
 
 Example 2
     [Tags]  non-critical  w-035657
+    capture page screenshot
     fail  not implemented yet
