@@ -6,6 +6,10 @@ Force Tags      Foundation
 Suite Setup     Open test browser
 Suite Teardown  Close all browsers
 
+*** Keywords ***
+Do something
+    fail  not implemented yet
+
 *** Test Cases ***
 Example 1
     [Tags]  w-035657
@@ -14,4 +18,4 @@ Example 1
 Example 2
     [Tags]  non-critical  w-035657
     capture page screenshot
-    fail  not implemented yet
+    Do something
