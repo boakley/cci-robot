@@ -2,7 +2,7 @@
 Documentation   Examples of foundation tests
 Resource        cumulusci/robotframework/Salesforce.robot
 
-Force Tags      Foundation
+Force Tags      foundation
 Suite Setup     Open test browser
 Suite Teardown  Close all browsers
 
