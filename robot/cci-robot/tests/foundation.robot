@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation   Examples of foundation tests
 Resource        cumulusci/robotframework/Salesforce.robot
+Library         bogus.py
 
 Force Tags      foundation
 Suite Setup     Open test browser
